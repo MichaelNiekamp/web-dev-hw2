@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Details for Morgenroth Music Center.">
+    <meta name="author" content="Michael Niekamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Morgenroth Music Center</title>
+
+    <style>
+        body {
+            background-color: powderblue;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        table, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+         }
+         th {
+            background-color: powderblue;
+         }
+         td {
+            background-color: honeydew;
+         }
+         .submit-button {
+            background-color: powderblue; /* Green */
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+
+</head>
+    <body>
+        <h1>
+            Morgenroth Music Center
+        </h1>
+        <div id="address" class="container">
+            <address>
+                Send them an <a href="mailto:garyb@montanamusic.com">email.</a>
+                <br>
+                <br>
+                Visit the store:
+                <br>
+                1105 W. Sussex
+                Missoula, MT 59801
+            </address>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.698106415776!2d-114.01514639999999!3d46.8496326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535dcdeb2fa3e741%3A0x2bb90b4033dac407!2sMorgenroth%20Music%20Center!5e0!3m2!1sen!2sus!4v1686017823793!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="hoursTable" class="container">
+            <h2>Hours of Operation</h2>
+            <table width="100%">
+                <caption>Store Hours</caption>
+                <tr>
+                   <th scope="col">Day</th>
+                   <th scope="col">Open</th>
+                   <th scope="col">Close</th>
+                </tr>
+                <tr>
+                   <th scope="row">Monday</th>
+                   <td>9:30 AM</td>
+                   <td>6:00 PM</td>
+                </tr>
+                <tr>
+                   <th scope="row">Tuesday</th>
+                   <td>9:30 AM</td>
+                   <td>6:00 PM</td>
+                </tr>
+                <tr>
+                   <th scope="row">Wednesday</th>
+                   <td>9:30 AM</td>
+                   <td>6:00 PM</td>
+                </tr>
+                <tr>
+                   <th scope="row">Thursday</th>
+                   <td>9:30 AM</td>
+                   <td>6:00 PM</td>
+                </tr>
+                <tr>
+                   <th scope="row">Friday</th>
+                   <td>9:30 AM</td>
+                   <td>6:00 PM</td>
+                </tr>
+                <tr>
+                   <th scope="row">Saturday</th>
+                   <td>9:30 AM</td>
+                   <td>5:30 PM</td>
+                </tr>
+                <tr>
+                   <th scope="row">Sunday</th>
+                   <td>Closed</td>
+                   <td>Closed</td>
+                </tr>
+                
+             </table>
+
+        </div>
+        <div id="input" class="container">
+            <h2>Feedback</h2>
+            <form action="https://feedback.php" method="get">
+                <label for="visited">Was the store easy to find?: 
+                    <input id="Yes" type="radio" name="visited" value="y">
+                    <label for="Yes">Yes</label> 
+                    <input id="No" type="radio" name="visited" value="n">
+                    <label for="No">No</label>
+                 </label>
+                 <br>
+                 <br>
+                 <p>Rate your experience:</p>
+                    <select name="rating">
+                        <option value="Horrible">Horrible</option>
+                        <option value="Bad">Bad</option>
+                        <option value="Okay">Okay</option>
+                        <option value="Good">Good</option>
+                        <option value="Great">Great</option>
+                        <option value="Fantastic" selected>Fantastic</option>
+                        <option value="I'm going back tomorrow!">I'm going back tomorrow!</option>
+                    </select>
+                 <br>
+                 <br>
+                 <br>
+                 <label for="userinfo">
+                    Describe your experience:
+                    <br>
+                    <textarea name="comments" id="userinfo" placeholder="My experience was..." rows="10" cols="40"></textarea>
+                 </label>
+                 <br>
+                 <br>
+                 <button class="submit-button">Submit</button>
+            </form>
+        </div>
+
+
+
+
+    </body>
+
+</html>
