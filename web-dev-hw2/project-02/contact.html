@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Details for Morgenroth Music Center.">
+    <meta name="author" content="Michael Niekamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Folding a Shirt</title>
+
+    <style>
+        ul {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        li {
+            display: inline;
+            padding: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container {
+            background-color: powderblue;
+            text-align: left;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        img {
+            width: 300px;
+            float: left;
+        }
+        .submit-button {
+            background-color: powderblue; /* Green */
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+
+</head>
+    <body>
+        <nav id="main">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="contact" class="container">
+        <h2>Contact Me</h2>
+            <form action="https://feedback.php" method="get">
+                <label for="visited">Were the instructions easy to follow?: 
+                    <input id="Yes" type="radio" name="visited" value="y">
+                    <label for="Yes">Yes</label> 
+                    <input id="No" type="radio" name="visited" value="n">
+                    <label for="No">No</label>
+                 </label>
+                 <br>
+                 <br>
+                 <p>Rate your experience:</p>
+                    <select name="rating">
+                        <option value="Horrible">Horrible</option>
+                        <option value="Bad">Bad</option>
+                        <option value="Okay">Okay</option>
+                        <option value="Good">Good</option>
+                        <option value="Great">Great</option>
+                        <option value="Fantastic" selected>Fantastic</option>
+                    </select>
+                 <br>
+                 <br>
+                 <br>
+                 <label for="userinfo">
+                    Send me a message:
+                    <br>
+                    <textarea name="comments" id="userinfo" placeholder="My experience was..." rows="10" cols="40"></textarea>
+                 </label>
+                 <br>
+                 <br>
+                 <button class="submit-button">Submit</button>
+            </form>
+        </div>
+    </body>
+
+</html>
