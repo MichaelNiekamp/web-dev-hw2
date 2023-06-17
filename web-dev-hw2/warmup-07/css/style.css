@@ -1,0 +1,35 @@
+body {
+    background-color: blanchedalmond;
+}
+
+h1, h3 {
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 0.15em;
+}
+
+h2, h4 {
+    font-family: Impact, sans-serif;
+    font-weight: bolder;
+}
+p, ul{
+    font-family: Georgia, Times;
+    font-size: 20px;
+    font-style: normal;
+}
+ol {
+    font-family: Georgia, Times;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.capitalize::first-letter {
+    font-size: xx-large;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
